@@ -1,0 +1,17 @@
+<litepal>
+    <dbname value="weather" />
+
+    <version value="9" />
+
+    <list>
+        <mapping class="com.example.lhq.weather.activity.db.City"/>
+        <mapping class="com.example.lhq.weather.activity.db.FragmentList"/>
+
+        <mapping class="com.example.lhq.weather.activity.data.CityLitepal"/>
+
+        <mapping class="com.example.lhq.weather.activity.data.Image360Url"/>
+
+        <mapping class="com.example.lhq.weather.activity.data.MyMusic"/>
+
+    </list>
+</litepal>

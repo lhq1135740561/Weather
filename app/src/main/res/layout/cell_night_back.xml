@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_fl_night_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="@dimen/string10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/night_back_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/string15dp"
+                android:layout_marginRight="@dimen/string5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/night_back_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期四"
+                    android:textSize="16sp"
+                    android:typeface="monospace"
+                    android:textColor="@color/c_3D3C3C"/>
+
+                <TextView
+                    android:id="@+id/night_back_ym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018.10"
+                    android:textSize="16sp"
+                    android:typeface="monospace"
+                    android:textColor="@color/c_3D3C3C"/>
+
+                <TextView
+                    android:id="@+id/night_back_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:typeface="monospace"
+                    android:textColor="@color/c_181818"
+                    android:textSize="60sp"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/string10dp">
+
+                <RadioButton
+                    android:id="@+id/night_tv_sign_click"
+                    android:layout_width="285dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/front"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="@string/finish_night_clock"
+                    android:typeface="sans"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

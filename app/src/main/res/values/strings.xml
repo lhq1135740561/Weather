@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">创客天气</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_weather_city">WeatherCityActivity</string>
+
+    <string name="text_sign">点击签到</string>
+
+    <string name="step_clock">打卡</string>
+    <string name="finish_step_clock">今日已打卡</string>
+    <string name="finish_night_clock">晚安打卡</string>
+
+    <string name="Title">每日打卡</string>
+    <string name="Content">打卡越多，奖励越丰富</string>
+    <string name="goodnightTitle">晚安送歌</string>
+    <string name="nightContent">每晚20:00后打卡送歌</string>
+    <string name="goodNight">听歌说晚安</string>
+    <string name="musicCut">换一首</string>
+
+    <string name="text_one">不要仰望别人</string>
+    <string name="text_two">自己亦是风景</string>
+
+    <string name="music_single">单曲循环</string>
+    <string name="music_order">循环播放</string>
+    <string name="music_mv">MV</string>
+
+
+    <string name="music_timer">定时关闭</string>
+    <string name="music_timer_set">设置定时</string>
+    <string name="music_timer_songs">我的歌单</string>
+
+
+    <string name="set_backg">背景</string>
+    <string name="set_update_bg">更新每图</string>
+    <string name="set_day_pic">每图</string>
+    <string name="set_km_hor">千米每小时</string>
+    <string name="set_wind">风力单位</string>
+    <string name="set_tmp">摄氏度℃</string>
+    <string name="set_tmps">温度单位</string>
+    <string name="set_unit">单位</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setBg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.activity.WeatherCityActivity">
+
+
+    <!--帧布局-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/weather_city_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/weather_city_fragment"
+                android:name="com.example.lhq.weather.activity.fragment.WeatherCityFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/weather_searchCity_fragment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:visibility="invisible">
+
+            <fragment
+                android:id="@+id/weather_searchCity_fragment"
+                android:name="com.example.lhq.weather.activity.fragment.WeatherSearchFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/city_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:borderWidth="0dp"
+            app:srcCompat="@mipmap/icon_plus" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

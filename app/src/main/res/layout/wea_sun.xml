@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sun_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/string15dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+
+        <com.example.lhq.weather.activity.view.SunView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            sun:svMainColor="#FE8109"
+            sun:svPadding="15dp"
+            sun:svSunColor="#FED300"
+            sun:svSunRadius="9dp"
+            sun:svTextOffset="20dp"
+            sun:svTextSize="10sp"
+            sun:svTrackColor="#FE8109"
+            sun:svTrackWidth="1dp" />
+
+        <View
+            android:id="@+id/wea_sun_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:alpha="20"
+            android:background="@color/citylayoutBg" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

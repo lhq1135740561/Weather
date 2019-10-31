@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="floatingAb">#48B1BB</color>
+
+    <color name="colorWeather">#F0E7E7</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBg">#8000</color>
+    <color name="colorToast">#7F7F7F</color>
+    <color name="item_bg">#666666</color>
+
+    <!--收藏城市-->
+    <color name="citylayoutBg">#969987</color>
+    <color name="citylayoutBg1">#D3E041</color>
+    <color name="citylayoutBg2">#A2A2A2</color>
+    <color name="citylayoutBg3">#DC2255</color>
+    <color name="citylayoutBg4">#4D4D4D</color>
+    <color name="citylayoutBg5">#7894E3</color>
+    <color name="citylayoutBg6">#CBE4FC</color>
+
+    <color name="shape">#7482A1</color>
+    <!--#54C28E-->
+    <color name="wea_sun">#54C28E</color>
+    <color name="wea_rain">#1B3535</color>
+    <color name="wea_snow">#37BCE9</color>
+    <color name="wea_float">#07D4D9</color>
+    <color name="wea_float2">#00B9C9</color>
+    <color name="wea_float3">#37B7E6</color>
+    <color name="wea_float4">#C1C1C1</color>
+
+
+    <color name="setBg">#F7F7F7</color>
+    <color name="setBg1">#FFFFFF</color>
+    <color name="setView">#DBD9D9</color>
+    <color name="setText">#A9A9A9</color>
+    <color name="setTextBrack">#4E4E4E</color>
+
+    <color name="colorBrack">#000000</color>
+
+    <color name="cancle">#DCDCDC</color>
+
+    <color name="c_white">#ffffff</color>
+
+    <color name="c_999999">#999999</color>
+    <color name="c_cccccc">#cccccc</color>
+    <color name="c_f7b93c">#f7b93c</color>
+    <color name="c_41c961">#41c961</color>
+    <color name="c_EEEEEE">#EEEEEE</color>
+    <color name="c_F4F2F2">#FAFAFA</color>
+    <color name="c_3D3C3C">#9A9A9A</color>
+    <color name="c_181818">#181818</color>
+
+    <color name="swichButton">#DC9AC8</color>
+
+
+    <color name="music_bg">#018779</color>
+    <color name="music_mv">#00BCD4</color>
+    <color name="music_search">#B16051</color>
+    
+    <color name="music_pop_bg">#E50011</color>
+    <color name="music_pop_text_color">#FBE4E5</color>//当前文本颜色
+    <color name="music_pop_toolbar_bg">#FFFFFF</color>//未选中的文本颜色
+
+
+    //红橙黄绿青蓝紫
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF7D00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="blue">#7CA0DD</color>
+    <color name="violet">#FF00FF</color>
+
+</resources>

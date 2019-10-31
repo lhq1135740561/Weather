@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="1dp"
+    android:layout_marginLeft="@dimen/string10dp"
+    android:layout_marginRight="@dimen/string10dp"
+    android:layout_marginTop="@dimen/string15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/string15dp">
+
+        <RelativeLayout
+            android:id="@+id/fra_city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/fra_city_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fra_city_cities"
+                android:layout_marginTop="@dimen/string5dp"
+                android:text="多云"
+                android:textColor="@color/setText"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/fra_city_cities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上围园新村八巷"
+                android:textColor="@color/setTextBrack"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/fra_city_location_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/fra_city_cities"
+                android:layout_marginLeft="@dimen/string5dp"
+                android:src="@mipmap/locationcity"
+                android:visibility="visible"/>
+
+
+            <ImageView
+                android:id="@+id/fra_city_info_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/string10dp"
+                android:layout_marginTop="@dimen/string10dp"
+                android:layout_toLeftOf="@+id/fra_city_tmp"
+                android:src="@mipmap/f100" />
+
+            <TextView
+                android:id="@+id/fra_city_tmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="11℃"
+                android:textColor="@color/setTextBrack"
+                android:textSize="40sp"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/setView"
+            android:layout_marginBottom="@dimen/string15dp"/>
+
+        <!--下部分-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fra_city_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空气良"
+                android:layout_centerVertical="true"
+                android:textColor="@color/setText"/>
+            <TextView
+                android:id="@+id/fra_city_logo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="@color/setText"
+                android:layout_toRightOf="@+id/fra_city_grade"
+                android:layout_marginLeft="@dimen/string5dp"
+                android:layout_marginRight="@dimen/string5dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:id="@+id/fra_city_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度86%"
+                android:layout_toRightOf="@+id/fra_city_logo1"
+                android:layout_centerVertical="true"
+                android:textColor="@color/setText"/>
+
+            <TextView
+                android:id="@+id/fra_city_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="@color/setText"
+                android:layout_toRightOf="@+id/fra_city_hum"
+                android:layout_marginLeft="@dimen/string5dp"
+                android:layout_marginRight="@dimen/string5dp"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/fra_city_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东北风9.8km/h"
+                android:layout_toRightOf="@+id/fra_city_logo2"
+                android:layout_centerVertical="true"
+                android:textColor="@color/setText"/>
+
+            <TextView
+                android:id="@+id/fra_city_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:layout_toLeftOf="@+id/fra_city_max_min"
+                android:textColor="@color/setText"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/fra_city_max_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_toLeftOf="@+id/fra_city_min"
+                android:textColor="@color/setText"/>
+            <TextView
+                android:id="@+id/fra_city_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textColor="@color/setText"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/string15dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

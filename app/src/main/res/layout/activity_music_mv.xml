@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activity.music.MusicMvActivity">
+
+
+
+    <com.example.lhq.weather.activity.view.DYLoadingView
+        android:id="@+id/dyLoadingview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:color1="#FF00EEEE"
+        app:color2="#FFFF4040"
+        app:radius1="6dp"
+        app:radius2="6dp"
+        app:gap="0.8dp"
+        app:mixColor="#FF000000"
+        app:rtlScale="0.7"
+        app:ltrScale="1.3"
+        app:duration="350"
+        app:pauseDuration="80"
+        app:scaleStartFraction="0.2"
+        app:scaleEndFraction="0.8"/>
+
+    <!--MV界面-->
+    <LinearLayout
+        android:id="@+id/mv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mv_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/music_bg">
+
+            <ImageView
+                android:id="@+id/mv_back"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/string10dp"
+                android:src="@mipmap/music_back" />
+
+            <TextView
+                android:id="@+id/music_mv_titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/string5dp"
+                android:layout_toRightOf="@+id/mv_back"
+                android:text="云音乐MV榜"
+                android:textColor="@color/colorWeather"
+                android:textSize="17sp"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/music_mv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mv_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+</FrameLayout>

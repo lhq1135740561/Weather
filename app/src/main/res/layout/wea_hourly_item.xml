@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/string10dp"
+    android:paddingBottom="@dimen/string10dp"
+    android:paddingRight="42dp">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wea_hourly_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWeather"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/wea_hourly_item_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="11sp"
+            android:textColor="@color/colorWeather"
+            android:typeface="sans"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wea_hourly_item_humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/string5dp"
+        android:textColor="@color/colorWeather"
+        android:layout_marginLeft="@dimen/string5dp"
+        android:typeface="sans"/>
+
+    <ImageView
+        android:id="@+id/wea_hourly_item_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/string10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/string5dp"
+        android:src="@mipmap/w101" />
+
+    <TextView
+        android:id="@+id/wea_hourly_item_tmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorWeather"
+        android:layout_marginLeft="@dimen/string5dp"
+        android:typeface="sans"/>
+
+
+</LinearLayout>

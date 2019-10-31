@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clickable="true"
+    android:layout_marginTop="3dp">
+
+    <ImageView
+        android:id="@+id/mv_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ten"/>
+
+    <TextView
+        android:id="@+id/mv_item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="24sp"
+        android:layout_marginLeft="@dimen/string15dp"
+        android:layout_above="@+id/mv_item_songs"
+        android:layout_marginBottom="@dimen/string10dp"
+        android:textStyle="bold"
+        android:typeface="sans"/>
+
+    <TextView
+        android:id="@+id/mv_item_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年少有为 - 李荣浩"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textColor="@color/colorWeather"
+        android:layout_marginLeft="@dimen/string15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/string15dp"
+        android:typeface="sans"/>
+
+</RelativeLayout>

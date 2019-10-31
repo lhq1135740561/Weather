@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--天气预报日期-->
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWeather"
+            android:text="2018-11-20"
+            android:layout_centerVertical="true"
+            android:typeface="sans"/>
+        <TextView
+            android:id="@+id/date_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWeather"
+            android:typeface="sans"
+            android:text="星期二"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/date_text"
+            android:layout_marginLeft="15dp"/>
+
+        <!--天气概括图片-->
+        <ImageView
+            android:id="@+id/info_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/w103"
+            android:layout_centerInParent="true"/>
+        <!--天气概括-->
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorWeather"
+            android:typeface="sans"
+            android:text="下雨"
+            android:layout_toRightOf="@+id/info_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <!--最低温度-->
+        <TextView
+            android:id="@+id/min_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="11"
+            android:layout_toLeftOf="@+id/maxMin_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWeather"
+            android:typeface="sans"/>
+        <TextView
+            android:id="@+id/maxMin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="~"
+            android:layout_toLeftOf="@+id/max_text"
+            android:textColor="@color/colorWeather"
+            android:layout_centerVertical="true"
+            android:typeface="sans" />
+        <!--最高温度-->
+        <TextView
+            android:id="@+id/max_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="17"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWeather"
+            android:typeface="sans"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/wea_forecast_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:alpha="20"
+        android:background="@color/citylayoutBg" />
+
+</LinearLayout>

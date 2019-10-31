@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.activity.SetActivity">
+
+    <RelativeLayout
+        android:id="@+id/set_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/floatingAb">
+
+        <ImageView
+            android:id="@+id/set_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/string10dp"
+            android:src="@mipmap/set_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/string10dp"
+            android:layout_toRightOf="@+id/set_back"
+            android:text="设置"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/setBg"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--天气预警提醒-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setBg1"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="@dimen/string10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天气预警提醒"
+                    android:textColor="@color/setText"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/string10dp"
+                    android:background="@color/setView" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/string15dp"
+                    android:paddingBottom="@dimen/string15dp">
+
+                    <TextView
+                        android:id="@+id/set_cityName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/set_cityName_switchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string15dp"
+                        app:sb_effect_duration="300" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--单位-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/string10dp"
+                android:background="@color/setBg1"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="@dimen/string10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_unit"
+                    android:textColor="@color/setText"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/string10dp"
+                    android:background="@color/setView" />
+
+                <RelativeLayout
+                    android:id="@+id/set_tmp_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/string15dp"
+                    android:paddingBottom="@dimen/string15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/set_tmps"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/set_tmp_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string10dp"
+                        android:layout_toLeftOf="@+id/set_tmp_image"
+                        android:text="@string/set_tmp"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <ImageView
+                        android:id="@+id/set_tmp_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string10dp"
+                        android:src="@mipmap/set_tmp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setView" />
+
+                <RelativeLayout
+                    android:id="@+id/set_wind_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/string15dp"
+                    android:paddingBottom="@dimen/string15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/set_wind"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/set_wind_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string10dp"
+                        android:layout_toLeftOf="@+id/set_wind_image"
+                        android:text="@string/set_km_hor"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <ImageView
+                        android:id="@+id/set_wind_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string10dp"
+                        android:src="@mipmap/set_tmp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--更新背景图片-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/string10dp"
+                android:background="@color/setBg1"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="@dimen/string10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_day_pic"
+                    android:textColor="@color/setText"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/string10dp"
+                    android:background="@color/setView" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/string15dp"
+                    android:paddingBottom="@dimen/string15dp">
+
+                    <TextView
+                        android:id="@+id/set_Bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/set_update_bg"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/set_Bg_switchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string15dp"
+                        app:sb_effect_duration="300" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/string10dp"
+                android:background="@color/setBg1"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="@dimen/string10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_backg"
+                    android:textColor="@color/setText"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/string10dp"
+                    android:background="@color/setView" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/string15dp"
+                    android:paddingBottom="@dimen/string15dp">
+
+                    <TextView
+                        android:id="@+id/set_main_Bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="切换背景"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/set_MainBg_switchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string15dp"
+                        app:sb_effect_duration="300" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/string15dp"
+                    android:paddingBottom="@dimen/string15dp">
+
+                    <TextView
+                        android:id="@+id/set_main_float"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="浮动背景"
+                        android:textColor="@color/setTextBrack"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/set_float_switchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/string15dp"
+                        app:sb_effect_duration="300" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

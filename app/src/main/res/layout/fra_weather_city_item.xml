@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/string10dp"
+    android:layout_marginRight="@dimen/string10dp"
+    android:layout_marginTop="@dimen/string15dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/add_city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/string15dp"
+            android:paddingLeft="@dimen/string5dp"
+            android:paddingRight="@dimen/string15dp"
+            android:paddingTop="@dimen/string15dp">
+
+            <ImageView
+                android:id="@+id/add_city_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="@dimen/string10dp"
+                android:paddingLeft="@dimen/string10dp"
+                android:paddingTop="@dimen/string10dp"
+                android:src="@mipmap/relete" />
+
+            <TextView
+                android:id="@+id/add_city_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_city_cities"
+                android:layout_toRightOf="@+id/add_city_delete"
+                android:text="晴"
+                android:textColor="@color/setText"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/add_city_cities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/add_city_delete"
+                android:text="北京市"
+                android:textColor="@color/setTextBrack"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/add_city_tmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="11℃"
+                android:textColor="@color/setTextBrack"
+                android:textSize="30sp"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

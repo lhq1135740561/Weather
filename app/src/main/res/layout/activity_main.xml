@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ac_main_bingPic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="100"/>
+
+    <xyz.matteobattilana.library.WeatherView
+        android:id="@+id/weatherView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="100"
+        app:angle="-3"
+        app:fadeOutTime="1000"
+        app:fps="60"
+        app:lifeTime="5000"
+        app:numParticles="15"
+        app:startingWeather="RAIN"/>
+
+    <com.meis.widget.particle.FireflyView
+        android:id="@+id/firefly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:firefly_max_radius="5"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ac_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never"/>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

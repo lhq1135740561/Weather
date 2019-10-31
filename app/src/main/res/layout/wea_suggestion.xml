@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/su_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/string15dp"
+    android:layout_marginLeft="@dimen/string15dp"
+    android:layout_marginRight="@dimen/string15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活建议"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+        <!--舒适度-->
+        <TextView
+            android:id="@+id/comfort_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorWeather"
+            android:typeface="monospace" />
+
+        <View
+            android:id="@+id/wea_suggestion_comfort"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:alpha="20"
+            android:background="@color/citylayoutBg" />
+
+        <!--洗车指数-->
+        <TextView
+            android:id="@+id/car_wash_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorWeather"
+            android:typeface="monospace" />
+
+        <View
+            android:id="@+id/wea_suggestion_wash"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:alpha="20"
+            android:background="@color/citylayoutBg" />
+        <!--运动建议-->
+        <TextView
+            android:id="@+id/sport_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorWeather"
+            android:typeface="monospace" />
+
+        <View
+            android:id="@+id/wea_suggestion_sport"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:alpha="20"
+            android:background="@color/citylayoutBg" />
+
+        <!--紫外线建议-->
+        <TextView
+            android:id="@+id/vu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorWeather"
+            android:typeface="monospace" />
+
+        <View
+            android:id="@+id/wea_suggestion_vu"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:alpha="20"
+            android:background="@color/citylayoutBg" />
+    </LinearLayout>
+
+</LinearLayout>

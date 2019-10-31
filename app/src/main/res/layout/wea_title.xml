@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <!--城市名-->
+    <TextView
+        android:id="@+id/title_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWeather"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+
+    <ImageView
+        android:id="@+id/title_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/string5dp"
+        android:layout_toRightOf="@+id/title_city"
+        android:src="@mipmap/location"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/city_add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/add"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/title_clocktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/string10dp"
+        android:layout_toRightOf="@+id/city_add"
+        android:textColor="@color/colorWeather" />
+
+    <ImageView
+        android:id="@+id/city_set"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/set" />
+
+</RelativeLayout>

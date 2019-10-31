@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/set_city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/floatingAb">
+
+        <ImageView
+            android:id="@+id/city_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/string10dp"
+            android:src="@mipmap/set_back" />
+
+        <TextView
+            android:id="@+id/city_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/string10dp"
+            android:layout_toRightOf="@+id/city_back"
+            android:text="城市管理"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/city_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/edit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+        <!--初始化需要隐藏的空间-->
+        <Button
+            android:id="@+id/city_cancle"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="取消"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/cancle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/string15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/city_manage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="城市管理"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/city_sure"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="确定"
+            android:background="@drawable/sure"
+            android:textColor="@color/setText"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:layout_marginRight="@dimen/string10dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fra_city_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/string15dp"
+        android:paddingTop="@dimen/string10dp"
+        android:overScrollMode="never"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fra_city_rv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/string15dp"
+        android:paddingTop="@dimen/string10dp"
+        android:overScrollMode="never"/>
+
+
+</LinearLayout>
